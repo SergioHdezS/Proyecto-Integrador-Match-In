@@ -1,0 +1,25 @@
+.imagen-mision {
+    width: 40vw;
+    height: max-content;
+    
+}
+
+.contenedor-parrafo-m{
+    display: flex;
+  
+   justify-content: center;
+    
+
+}
+
+
+.parrafo-mision {
+    background: rgba(0, 0, 0, 0.5);
+    width: max-content;
+    height: max-content;
+    color: beige;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    font-size: xx-large;
+   
+}

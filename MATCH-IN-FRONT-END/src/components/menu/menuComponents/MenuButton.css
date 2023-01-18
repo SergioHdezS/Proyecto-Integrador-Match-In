@@ -1,0 +1,20 @@
+.boton-menu {
+    background: rgba(0, 0, 0, 0.7);
+    width: 150px;
+    border: none; 
+    font-family: 'Bebas Neue', cursive;
+    font-size: x-large;
+    color: white;
+    transition: all 0.6s;
+
+    
+    
+    
+    
+}
+
+.boton-menu:hover{
+    background: rgb(0, 0, 0);
+    color: #6bc561;
+    transform: scale(1.1);
+}

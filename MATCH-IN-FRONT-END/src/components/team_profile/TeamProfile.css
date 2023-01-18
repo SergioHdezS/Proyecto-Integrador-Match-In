@@ -1,0 +1,115 @@
+body {
+    background-image: url(/src/assets/img/fondoDosAU.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container-team-profile-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-team-profile {
+    width: 80%;
+    height: 90%;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 30px;
+    color: white;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 350px;
+    justify-content: center;
+    padding: 15vh;
+}
+
+.gallery_img {
+    width: 200px;
+    height: 200px;
+    /* object-fit: cover; */
+    margin-bottom: 30px;
+}
+
+.gallery_name {
+    width: 191px;
+    height: 28px;
+    left: 622px;
+    top: 1040px;
+
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.gallery_item {
+    width: 350px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery_item:nth-child(2) {
+    grid-column-start: span 2;
+    width: 700px;
+}
+
+.insignia {
+    width: 348px;
+    height: 405px;
+}
+
+.team-name {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 28px;
+    text-align: center;
+    justify-content: center;
+}
+
+@media (max-width:1350px) {
+    .container-team-profile {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 350px;
+    }
+    .gallery_item:nth-child(1) {
+        grid-column-start: span 2;
+        width: 700px;
+    }
+
+}
+
+@media (max-width:850px) {
+    .container-team-profile {
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 350px;
+    }
+
+    .gallery_item:nth-child(1) {
+        grid-column-start: 1;
+        width: 350px;
+    } 
+
+    .gallery_item:nth-child(2) {
+        grid-column-start: 1;
+        width: 300px;
+    } 
+
+    .insignia {
+        width: 300px;
+        height: 350px;
+    }
+}

@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    
+}
+
+.header-dos .logo {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.header-dos {
+    background-color:#000000;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 75px;
+    padding: 5px 10%;
+    
+}
+
+.header-dos .logo img{
+    transition: all 0.3s;
+    
+}
+
+.header-dos .d-flex{
+    width: 220px;
+    height: 30px;
+    align-items: center;
+}
+.header-dos .btn {
+    font-weight: 600;
+    color: white;
+    padding: 9px 25px;
+    border-style: groove;
+    border-color: white;
+    transition: all 0.3s;
+    border-width: 2px;
+    height: 40px;
+    
+    
+}
+
+.header-dos .btn:hover{
+    transform: scale(1.1);
+    color: #6bc561;
+    border-color: #6bc561;
+    
+}
+
+
+.header-dos .logo img:hover{
+    transform: scale(1.2  );
+}
+
+
+.header-dos .nav-links-dos{
+    list-style: none;
+}
+
+.header-dos .nav-links-dos li{
+    display: inline-block;
+    padding: 0 20px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.header-dos .nav-links-dos li:hover{
+    transform: scale(1.1);
+}
+
+header-dos .nav-links-dos a{
+    font-size: 700;
+    color: white;
+    
+}
+
+.header-dos .nav-links-dos li a:hover{
+    color: #6bc561;
+}
+
+
+.highlight{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    transition: 0.5s;
+    display: none;
+}
+
+.header-dos .highlight:hover{
+    color: #6bc561;
+    transform: scale(1.1);
+    
+}
+
+.header-dos .usuarionavbarimg{
+    cursor: pointer;
+   
+}
+.img-user{
+    width: 35px;
+    margin-left: 40px;
+    
+}
+
+.header-dos .usuarionavbarimg img{
+    transition: all 0.3s;
+}
+
+.header-dos .usuarionavbarimg img:hover{
+    transform: scale(1.1);
+}
+
+
+
+@media screen and (max-width:1251px) {
+    .nav-links-dos, .usuarionavbarimg{
+        display: none;
+
+    }
+    .highlight {
+        display: inherit;
+    }
+    .header-dos .nav-links-dos a{
+        font-size: 700;
+        color: white;
+        
+    }
+    
+}
+
+/*Nav*/
+
+.header-dos a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: 0.5s;
+    padding: 10px 0;
+
+}
+
+
+.header-dos a:hover {
+    transform: scale(1.2);
+    
+}
+.img-user{
+    width: 40px;
+    
+}
+
+.header-dos .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color:#000000;
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+   
+    
+}
+
+.header-dos .overlay .overlay-content {
+    
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.header-dos .overlay .a{
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: all 0.3s ease 0s;
+    font-weight: 700;
+    color: white;
+    
+
+}
+
+.header-dos .overlay a:hover,
+.header-dos .overlay a:focus{
+    color: #6bc561;
+
+}
+
+.header-dos .overlay .close {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 65px;
+}
+
+@media screen and (max-height:450px) {
+    .header-dos .overlay a{
+        font-size: 20px;
+        
+    }
+    .header-dos .overlay .close{
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+
+    }
+    
+}

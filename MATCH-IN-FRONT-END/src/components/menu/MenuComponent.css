@@ -1,0 +1,128 @@
+body {
+    background-image: url(../../assets/img/fondoinicio.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 900px;
+    margin: 10px auto;
+    display: grid;
+    gap: 2px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, auto);
+
+
+    grid-template-areas: "perfil buscarpartido buscarpartido equipo"
+        "perfil buscarpartido buscarpartido equipo"
+        "perfil buscarpartido buscarpartido equipo"
+        "perfil crearpartido crearpartido equipo"
+        "perfil crearpartido crearpartido equipo";
+}
+
+
+.contenedor>div {
+
+
+    padding: 10px;
+}
+
+.contenedor .perfil {
+    background: rgba(255, 255, 255, 0.3);
+    background-image: url(../../assets/img/miperfil.png);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-style: solid;
+    border-color: black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+
+
+    grid-area: perfil;
+
+}
+
+.contenedor .buscarpartido {
+    background-image: url(../../assets/img/buscarpartido.png);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-style: solid;
+    border-color: black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    grid-area: buscarpartido;
+}
+
+.contenedor .crearpartido {
+    background-image: url(../../assets/img/crearpartido.png);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-style: solid;
+    border-color: black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    grid-area: crearpartido;
+}
+
+.contenedor .equipo {
+    background: rgba(255, 255, 255, 0.3);
+    background-image: url(../../assets/img/miequipo.png);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-style: solid;
+    border-color: black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    min-height: 450px;
+    grid-area: equipo;
+}
+
+
+@media screen and (max-width:720px) {
+
+    .contenedor {
+        grid-template-columns: repeat(2, minmax(min(100%, 5rem), 1fr));
+        grid-template-rows: repeat(13, 0.5fr);
+        grid-template-areas: "buscarpartido buscarpartido "
+            "buscarpartido buscarpartido "
+            "buscarpartido buscarpartido "
+            "perfil equipo"
+            "perfil equipo"
+            "perfil equipo"
+            "perfil equipo"
+            "perfil equipo"
+            "perfil equipo"
+            "perfil equipo"
+            "crearpartido crearpartido"
+            "crearpartido crearpartido"
+            "crearpartido crearpartido";
+    }
+
+
+
+
+}

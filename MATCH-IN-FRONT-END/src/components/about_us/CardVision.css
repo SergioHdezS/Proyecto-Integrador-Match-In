@@ -1,0 +1,30 @@
+.imagen-vision {
+    width: 40vw;
+    height: max-content;
+    place-content: flex-end;
+    
+}
+
+.contenedor-parrafo-v{
+    display: flex;
+    place-content:center;
+  
+    
+
+}
+
+
+.parrafo-vision {
+    background: rgba(0, 0, 0, 0.5);
+    width: max-content;
+    height: max-content;
+    color: beige;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    font-size: xx-large;
+   
+}
+
+.contenedor-imagen-vision{
+    place-content: flex-end;
+}

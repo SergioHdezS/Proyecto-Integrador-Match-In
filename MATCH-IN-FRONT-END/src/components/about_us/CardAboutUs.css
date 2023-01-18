@@ -1,0 +1,51 @@
+.contenedor-tarjetas {
+
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+   
+
+
+
+}
+
+
+
+.fran {
+    width: 10vw;
+    
+    
+}
+
+.ivan {
+    width: 10vw;
+   
+   
+   
+}
+
+.paula {
+    width: 10vw;
+ 
+}
+
+.benja {
+    width: 10vw;
+  
+}
+
+.checho {
+    width: 10vw;
+
+}
+.card-title {
+   background: rgba(0, 0, 0, 0.8);
+   width: 160px;
+   height: 46px;
+   color: beige;
+   font-family: 'Bebas Neue', cursive;
+   text-align: center;
+
+   
+} 
+  

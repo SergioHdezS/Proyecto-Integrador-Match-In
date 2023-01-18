@@ -1,0 +1,31 @@
+
+
+
+.backg-uno{
+    background-image: url(/src/assets/img/fondoinicio.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+    z-index: -1;
+    margin: 0;
+
+    
+}
+
+
+.backg-dos{
+    background-image: url(/src/assets/img/fondoDosAU.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    min-height: 150vh;
+    z-index: -1;
+    margin: 0;
+
+}
+
+
+

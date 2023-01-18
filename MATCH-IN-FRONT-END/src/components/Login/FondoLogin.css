@@ -1,0 +1,10 @@
+.backgroundLogin {
+    background-image: url(/src/components/Login/imagenlogin.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+    z-index: 100;
+  }
+  
